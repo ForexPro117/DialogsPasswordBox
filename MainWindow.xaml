@@ -1,0 +1,13 @@
+﻿<Window x:Class="DialogsPasswordBox.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DialogsPasswordBox"
+        mc:Ignorable="d"
+        Title="Пароль" SizeToContent="WidthAndHeight" ResizeMode="NoResize" Loaded="Window_Loaded" MinWidth="300">
+    <StackPanel Margin="5">
+        <PasswordBox x:Name="passwordBox" Margin="5" Padding="5" PasswordChanged="passwordBox_PasswordChanged" />
+        <Button x:Name="button1" Margin="5" Padding="5" Content="Открыть защищенное окно" Click="button1_Click" IsEnabled="False" IsDefault="True"/>
+    </StackPanel>
+</Window>
